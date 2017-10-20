@@ -1,3 +1,7 @@
+html {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
 .caption {
   height: 400px;
   margin-top: 0;
@@ -7,4 +11,17 @@
   margin: 0;
   padding: 50px;
   padding-top: 100px;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+}
+
+.card .card-action {
+  margin-bottom: 20px;
+}
+.row2 {
+  padding: 20px;
+  float: right;
 }
