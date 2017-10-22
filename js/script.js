@@ -20,20 +20,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
  }
   var subtotal = 0
 
+  function price() {
+    var tax = subtotal * .1
+    var total = subtotal + tax
+    $('#subtotal').text(subtotal)
+    $('#tax').text(tax.toFixed(2))
+    $('#total').text(total.toFixed(2))
+  }
+
   $('#menu_item_one').click(function(event) {
     event.preventDefault()
     var cardContent = $('.card-content')[0]
     var royale = obj.burger.name
     var royalePrice = obj.burger.price
     var newTable = '<tr><td>' + royale + '</td><td>' + royalePrice + '</td></tr>'
-    //put all the below in a funct
     $('table tbody').append(newTable)
     subtotal += royalePrice
-    var tax = subtotal * .1
-    var total = subtotal + tax
-    $('#subtotal').text(subtotal)
-    $('#tax').text(tax.toFixed(2))
-    $('#total').text(total.toFixed(2))
+    price()
   })
   $('#menu_item_two').click(function(event) {
     event.preventDefault()
@@ -43,11 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var newTable = '<tr><td>' + swine + '</td><td>' + swinePrice + '</td></tr>'
     $('table tbody').append(newTable)
     subtotal += swinePrice
-    var tax = subtotal * .1
-    var total = subtotal + tax
-    $('#subtotal').text(subtotal)
-    $('#tax').text(tax.toFixed(2))
-    $('#total').text(total.toFixed(2))
+    price()
   })
   $('#menu_item_three').click(function(event) {
     event.preventDefault()
@@ -57,11 +56,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var newTable = '<tr><td>' + pizza + '</td><td>' + pizzaPrice + '</td></tr>'
     $('table tbody').append(newTable)
     subtotal += pizzaPrice
-    var tax = subtotal * .1
-    var total = subtotal + tax
-    $('#subtotal').text(subtotal)
-    $('#tax').text(tax.toFixed(2))
-    $('#total').text(total.toFixed(2))
+    price()
   })
   $('#menu_item_four').click(function(event) {
     event.preventDefault()
@@ -71,11 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var newTable = '<tr><td>' + iceCream + '</td><td>' + iceCreamPrice + '</td></tr>'
     $('table tbody').append(newTable)
     subtotal += iceCreamPrice
-    var tax = subtotal * .1
-    var total = subtotal + tax
-    $('#subtotal').text(subtotal)
-    $('#tax').text(tax.toFixed(2))
-    $('#total').text(total.toFixed(2))
+    price()
   })
 
 })

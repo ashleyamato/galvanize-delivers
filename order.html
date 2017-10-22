@@ -16,148 +16,137 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Galvanize Delivers</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="file:///Users/ashleyamato/desktop/g68/week03/galvanize-delivers/order.html?#!">Order Delivery</a></li>
-        </ul>
-      </div>
-    </nav>
     </head>
 
     <body>
+      <nav>
+        <div class="nav-wrapper blue darken-3">
+          <a href="#" class="brand-logo">Galvanize Delivers</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="file:///Users/ashleyamato/desktop/g68/week03/galvanize-delivers/order.html?#!">Order Delivery</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <div class='row'>
-        <h3 class="col s8" class='menu'>Menu</h3>
-        <h3 class="col s4" class='menu'>Order</h3>
+        <div id='firstCol' class="col s12 m12 l6">
+          <div class='row'>
+            <h4 class="col s12 m8">Menu</h3>
+          </div>
+          <div class="col s12 m12 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/burger.jpg">
+            </div>
+            <div class="card-content">
+              <h5>Royale with Cheese</h5>
+              <p>$8.99</p>
+            </div>
+            <div class="card-action" id="menu_item_one">
+              <a href="#" class='order pink-text'>ADD TO ORDER</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pizza.jpg">
+            </div>
+          <div class="card-content">
+            <h5>Arugula Pie</h5>
+            <p>$11.99</p>
+          </div>
+          <div class="card-action" id="menu_item_three">
+            <a href="#" class='order pink-text'>ADD TO ORDER</a>
+          </div>
+        </div>
       </div>
 
-        <div class="row">
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image">
-                <img src="img/burger.jpg">
-              </div>
-              <div class="card-content">
-                <h5>Royale with Cheese</h5>
-                <p>$8.99</p>
-              </div>
-              <div class="card-action" id="menu_item_one">
-                <a href="#">ADD TO ORDER</a>
-              </div>
-            </div>
+      <div class="col s12 m12 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/ribs.jpg">
           </div>
-
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image">
-                <img src="img/ribs.jpg">
-              </div>
-              <div class="card-content">
-                <h5>Smoked Swine</h5>
-                <p>$14.99</p>
-              </div>
-              <div class="card-action" id="menu_item_two">
-                <a href="#">ADD TO ORDER</a>
-              </div>
-            </div>
+          <div class="card-content">
+            <h5>Smoked Swine</h5>
+            <p>$14.99</p>
           </div>
-
-          <div class='col s4'>
-            <table class="striped" class="responsive-table">
-              <thead>
-                <tr>
-                  <th>Item</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-
-              <tbody>
-              </tbody>
-              <tfoot>
-                <tr style="background-color: white">
-                  <td>Subtotal</td>
-                  <td id="subtotal">$0.00</td>
-                </tr>
-                <tr>
-                  <td>Tax</td>
-                  <td id="tax">$0.00</td>
-                </tr>
-                <tr style="background-color: white">
-                  <td>Total</td>
-                  <td id="total">$0.00</td>
-                </tr>
-              </tfoot>
-              </table>
-            </div>
+          <div class="card-action" id="menu_item_two">
+            <a href="#" class='order pink-text'>ADD TO ORDER</a>
           </div>
-
-        <div class="row">
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image">
-                <img src="img/pizza.jpg">
-              </div>
-              <div class="card-content">
-                <h5>Arugula Pie</h5>
-                <p>$11.99</p>
-              </div>
-              <div class="card-action" id="menu_item_three">
-                <a href="#">ADD TO ORDER</a>
-              </div>
-            </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/ice_cream.jpg">
           </div>
-
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image">
-                <img src="img/ice_cream.jpg">
-              </div>
-              <div class="card-content">
-                <h5>Ice Cream Biscuit</h5>
-                <p>$7.99</p>
-              </div>
-              <div class="card-action" id="menu_item_four">
-                <a href="#">ADD TO ORDER</a>
-              </div>
-            </div>
+          <div class="card-content">
+            <h5>Ice Cream Biscuit</h5>
+            <p>$7.99</p>
           </div>
-
-          <div class="row">
-            <div class='col s4'>
-             <div class="row">
-               <div class="input-field col s12">
-                <form onsubmit="return validate()">
-                 <i class="material-icons prefix">account_circle</i>
-                 <input id="name" type="text" required>
-                 <label class="active" for="name">First Name</label>
-               </div>
-               <div class="row">
-                 <div class="input-field col s12">
-                   <i class="material-icons prefix">phone</i>
-                   <input id="phone" type="text" required>
-                   <label class="active" for="phone">Phone</label>
-                 </div>
-                <div class="row">
-                 <div class="input-field col s12">
-                   <i class="material-icons prefix">business</i>
-                   <input id="address" type="text" required>
-                    <label class="active" for="address">Address</label>
-                  </div>
-                <div class="row2">
-                  <input class="waves-effect waves-light btn" type='submit'></input>
-                </div>
-              </div>
-             </form>
-           </div>
-         </div>
+          <div class="card-action" id="menu_item_four">
+            <a href="#" class='order pink-text'>ADD TO ORDER</a>
+          </div>
         </div>
       </div>
     </div>
-    </body>
 
-    <footer class="page-footer">
+    <div class='col s12 m12 l4'>
+      <div class='row'>
+        <h4 class="col s12 m8">Order</h3>
+      </div>
+      <table class="striped" class="responsive-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr style="background-color: white">
+            <td>Subtotal</td>
+            <td id="subtotal">$0.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td id="tax">$0.00</td>
+          </tr>
+          <tr style="background-color: white">
+            <td>Total</td>
+            <td id="total">$0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="input-field col s12">
+        <form onsubmit="return validate()">
+          <i class="material-icons prefix pink-text">account_circle</i>
+            <input id="name" type="text" required>
+            <label class="active" for="name">First Name</label>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix pink-text">phone</i>
+            <input id="phone" type="text" required>
+            <label class="active" for="phone">Phone</label>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix pink-text">business</i>
+              <input id="address" type="text" required>
+              <label class="active" for="address">Address</label>
+          </div>
+          <div class="row2">
+            <input class="waves-effect waves-light btn pink" type='submit'></input>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <footer class="page-footer blue darken-3">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -178,5 +167,6 @@
         </div>
       </div>
     </footer>
-
+    
+  </body>
 </html>
