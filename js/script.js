@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
      price: 14.99,
    },
     pizza: {
-     name: 'Argula Pie',
+     name: 'Arugula Pie',
      price: 11.99,
    },
     iceCream: {
-     name: 'Ice Cream Biscut',
+     name: 'Ice Cream Biscuit',
      price: 7.99,
    },
  }
