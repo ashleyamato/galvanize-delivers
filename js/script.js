@@ -76,4 +76,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
       Materialize.toast('Your order has been submitted.', 4000)
     }
   })
+  $(".button-collapse").sideNav();
 })
