@@ -77,6 +77,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $('#tax').text(tax.toFixed(2))
     $('#total').text(total.toFixed(2))
   })
-  console.log(total)
 
 })
