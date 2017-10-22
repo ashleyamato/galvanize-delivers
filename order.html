@@ -118,29 +118,28 @@
         </tfoot>
       </table>
 
-      <div class="input-field col s12">
-        <form onsubmit="return validate()">
-          <i class="material-icons prefix pink-text">account_circle</i>
+        <div class="input-field col s12">
+          <form onsubmit="return validate">
+            <i class="material-icons prefix pink-text">account_circle</i>
             <input id="name" type="text" required>
             <label class="active" for="name">First Name</label>
-      </div>
-
-      <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix pink-text">phone</i>
-            <input id="phone" type="text" required>
-            <label class="active" for="phone">Phone</label>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <i class="material-icons prefix pink-text">business</i>
-              <input id="address" type="text" required>
-              <label class="active" for="address">Address</label>
+            <i class="material-icons prefix pink-text">phone</i>
+              <input id="phone" type="text" required>
+              <label class="active" for="phone">Phone</label>
           </div>
-          <div class="row2">
-            <input class="waves-effect waves-light btn pink" type='submit'></input>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix pink-text">business</i>
+                <input id="address" type="text" required>
+                <label class="active" for="address">Address</label>
+            </div>
+            <div class="row2">
+              <input id="button" onclick="showToast('toast', 4000)" class="waves-effect waves-light btn pink" type='submit'></input>
+            </div>
           </div>
-        </div>
         </form>
       </div>
     </div>
@@ -167,6 +166,6 @@
         </div>
       </div>
     </footer>
-    
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 </html>
