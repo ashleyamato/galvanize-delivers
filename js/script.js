@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     subtotal += iceCreamPrice
     price()
   })
-  console.log($('total'))
   $('#button').click(function() {
     if ($('#name').val() === '' || $('#phone').val() === '' || $('#address').val() === '' || subtotal === 0) {
     Materialize.toast('Please choose a menu item and enter required fields.', 4000)
